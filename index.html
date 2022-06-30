@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+      body{
+    background-color: white;
+    color: whitesmoke;
+  }
+    /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  .steel {
+    color: #363734;
+    text-align: left;
+    font-family: Verdana,monospace;
+    font-weight: bold;
+    font-size: 980%;
+  }
+  
+  .middletext{
+    text-align: center;
+  }
+  
+  .smaller-image {
+    width: 100px;
+  }
+  .thick-green-border{
+    border-color:green;
+    border-width:10px;
+    border-style:solid;
+    border-radius: 10px;
+    /*border-radius: 50%;*/
+  }
+  
+
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .buttonjoin {
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    padding: 30px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #ffe57f;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px #90caf9;
+  }
+  .buttonlogin {
+    display: inline-flex;
+    position: relative;
+    left: 55%;
+    right: 0%;
+    top: 3%;
+    margin-right: 10%;
+    padding: 10px 19px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: ghostwhite;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px #000;
+  }
+  .buttonlogin:hover {background-color: #E0E0E0}
+  .buttonjoin:hover {background-color: #ffab40}
+  .button:hover {background-color: #3e8e41}
+
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  
+  h4 {
+    text-align: center;
+    background-color: #5865F2;
+    padding: 10px;
+    font-size: 27px;
+  }
+
+
+
+
+  /*  #thumbnail {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .fullCard {
+      background: #2c90ec;
+      width: 245px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 10px 5px;
+      padding: 4px;
+    }
+    .fullCard2 {
+      background: #2c90ec;
+      width: 245px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 5px 390px;
+      padding: 4px;
+    }
+    .cardContent {
+      padding: 10px;
+    }*/
+    .cardText {
+      margin-bottom: 30px;
+    }
+
+
+
+
+    * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 10px;
+    padding: 16px;
+    width: 245px;
+    text-align: center;
+    background: #2c90ec;
+  }
+
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .textstyle{
+    display: block;
+    font-size: 240%;
+    text-shadow: 12%;
+    font-weight: bold;
+    text-align: center;
+    color: #42A5F5;
+    background-color: #E0F7FA;
+    border-radius: 10px;
+  }
+  .aboutusimg{
+    left: 10%;
+  }
+  .aboutuspara{
+    display: block;
+    font-size: 200%;
+    text-shadow: 12%;
+    font-weight: bold;
+    text-align: center;
+    color: #FFB300;
+  }
+  .abtsec{
+    display: inline-block;
+    background-color: #424242;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.0);
+    width: 50%;
+    background-color: #80D8FF;
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  .uppertaskbar{
+    display: block;
+    background-color: #FFECB3;
+    border-radius: 9px;
+    float: initial;
+  }
+  .uppername{
+    display: inline-block;
+    left: 10%;
+    margin-left: 10%;
+    color: #373737;
+    font-size: 180%;
+    font-family: cursive;
+  }
+  .widget{
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.0);
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .cardlist{
+    color: #00897B;
+    font-size: 120%;
+    text-align: !important;
+  }
+  .endsec{
+    background-color: black;
+    padding: 45px 30px;
+    border-radius: 5px;
+  }
+  .midpara{
+    background-color: #FFECB3;
+    border-radius: 5px;
+  }
+  .cardinternal{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+  .middleback{
+    display: block;
+    background-image:url("https://cdn.discordapp.com/attachments/910158294344142849/922411396883431464/1001352-free-pretty-winter-backgrounds-2560x1440-meizu.jpg") ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    float: up;
+  }
+</style>
+<meta content="width=device-width, initial-scale=1' name='viewport" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dreamy Dankers" />
+    <meta property="og:description" content="An Advanced Dank Memer Based Server!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta property="og:url" content="https://www.dreamy-dankers.tk/" />
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/844537748484259851/a_c4d227a5facc53ac86157fae1933c501.gif" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+<head>
+  <div class="uppertaskbar">
+    
+    <h2 class="uppername">
+      THE DREAMY
+    </h2>
+    <a href = "https://discord.com/api/oauth2/authorize?client_id=915504869564112916&redirect_uri=https%3A%2F%2Fwww.dreamy-dankers.tk%2Flogin&response_type=code&scope=identify">
+    <button class= "buttonlogin">Login with Discord</button></a>
+  </div>
+</head>
+<body>
+  <div class="middleback">
+    <h1 class="steel">THE DREAMY</h1>
+    <a href="https://discord.gg/P4ErnZU6vv" target="_blank"><button class="buttonjoin">Join The Dreamy ☛</button></a>
+  </div>
+  <br>
+  <br>
+  <div class="midpara">
+    <div class="abtsec">
+      <h2 class="textstyle">
+        - OUR STORY - 
+      </h2>
+      <div class="cardinternal">
+        <p class="aboutuspara">
+          Discord server based on -
+          <ul class="cardlist">
+            <li>
+              DANK MEMER
+            </li>
+            <li>
+              SOCIAL GATHERING
+            </li>
+            <li>
+              CHAT GROUPS
+            </li>
+            <li>
+              STUDIES
+            </li>
+            <li>
+              REGULAR DISCUSSIONS
+            </li>
+            <li>
+              DAILY FACTS
+            </li>
+            <li>
+              BOT FUN
+            </li>
+          </ul>
+          <hr>
+        </p>
+        <p class="aboutuspara">
+          In Stock -
+          <ul class="cardlist">
+            <li>
+              COOL STAFF TEAM
+            </li>
+            <li>
+              DAILY GIVEAWAYS
+            </li>
+            <li>
+              NITRO GIVEAWAYS
+            </li>
+            <li>
+              EFFECTIVE MODERATION
+            </li>
+            <li>
+              NO NSFW STUFF
+            </li>
+            <li>
+              TOXIC USER FREE
+            </li>
+            <li>
+              NO USELESS PINGS
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div align="right" class="widget">
+      <iframe src="https://discord.com/widget?id=844537748484259851&theme=light" width="400" height="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="endsec">
+    <h5>
+      COPYRIGHT © 2022 THE DREAMY
+    </h5>
+  </div>
+</footer>
+
+
+
+
+
+
+</html>
