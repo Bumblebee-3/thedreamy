@@ -17,7 +17,7 @@ body {
 
 
 .content {
-    height: 200vh;
+    height: 100%;
     background-image: url(images/background.jpg);
     background-color: rgb(51, 51, 51);
     background-blend-mode: multiply;
@@ -25,6 +25,7 @@ body {
     display: grid;
     /* place-items: center; */
     color: azure;
+    padding-top: 82px;
 }
 
 /* NAVIGATION STYLES GOES HERE */
@@ -96,6 +97,7 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    overflow: hidden;
 }
 
 nav li {
@@ -170,4 +172,40 @@ nav a:hover {
     nav a:hover::before {
         transform: scale(1,1);
     }
+}
+
+/* PAGE LAYOUTS START HERE */
+
+.section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutserver {
+    width: 49%;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 4px;
+    padding: 0 4px;
+    border-radius: 10px;
+    place-items: center;
+    display: inline-block;
+}
+
+img {
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.lilone {
+    margin-bottom: 50px;
+}
+
+.textcard {
+    font-family: 'Tahoma';
 }
