@@ -1,6 +1,6 @@
-#THE DREAMY
+# THE DREAMY
 
-##The public repository for the website of the dreamy discord server
+## The public repository for the website of THE DREAMY discord server
 
 Site Address : https://thedreamy.herokuapp.com/
 
