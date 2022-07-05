@@ -176,36 +176,37 @@ nav a:hover {
 
 /* PAGE LAYOUTS START HERE */
 
-.section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+/* NOT WORKING RYT NAW */
+
+.firstblock {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(400px, 4fr) 1fr;;
 }
 
-.aboutserver {
-    width: 49%;
-    height: 450px;
-    object-fit: cover;
-    margin-top: 4px;
-    padding: 0 4px;
+.imageleft {
+    grid-column: 1 / 2;
+    /* padding-right: 180px; */
+}
+
+.loungeimg {
     border-radius: 10px;
-    place-items: center;
-    display: inline-block;
+    box-shadow: 0 0 20px 0 rgba(25, 6, 197, 0.8);
 }
 
-img {
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+.blocktxtright {
+    grid-column: 3 / 5;
+    place-content: center;
 }
 
-.lilone {
-    margin-bottom: 50px;
+.headingright {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    
 }
 
-.textcard {
-    font-family: 'Tahoma';
+.descright {
+    font-size: 20px;
+    line-height: 1.625;
 }
