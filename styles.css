@@ -17,13 +17,9 @@ body {
 
 
 .content {
-    /* height: 100%; */
-    /* background-image: url(images/background.jpg); */
-    /* background-color: linear-gradient(147deg, #000000 0%, #2c3e50 74%); */
-    /* background-color: rgb(0, 0, 0); */
     background-blend-mode: multiply;
     background-size: cover;
-    display: grid;
+    /* display: grid; */
     /* place-items: center; */
     color: azure;
     padding-top: 82px;
@@ -177,47 +173,55 @@ nav a:hover {
 
 /* PAGE LAYOUTS START HERE */
 
-/* NOT WORKING RYT NAW */
-
 .firstblock {
-    padding: 5%;
-    display: inline-block;
+    display: block;
+    align-items: center;
+    padding: 2% 10%;
 }
 
 .imageleft {
-    float:left;
-    margin-left: 40px;
-    /* background-color: blue; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.loungeimg {
+.loungeimg img {
+    overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0 rgba(72, 72, 75, 0.8);
+    box-shadow: 0 0 20px 0 rgba(96, 99, 98, 0.8);
 }
 
 .blocktxtright {
-    place-content: center;
-    float: right;
-    min-width: 100px;
-    max-width: 400px;
-    margin-top: 5px;
-    margin-right: 40px;
-    /* background-color: aqua; */
+    margin: 10px 0;
+    padding: 0 10%;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .headingright {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 48px;
-    text-align: center;
-    padding: 0;
+    font-weight: 700;
+    font-size: 40px;
     margin: 0;
-    
+    padding: 10px 0;
 }
 
 .descright {
+    font-family: 'Tahoma', sans-serif;
     font-size: 20px;
-    line-height: 1.625;
-    text-align: center;
-    padding-top: 8px;
+    line-height: 1.225;
+}
+
+@media screen and (min-width: 1040px) {
+    .firstblock {
+        display: flex;
+    }
+    .imageleft {
+        flex: 1;
+    }
+    .blocktxtright {
+        flex: 2;
+        padding: 0 15%;
+    }
 }
