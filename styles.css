@@ -36,6 +36,7 @@ header {
     width: 100%;
     z-index: 999;
     color:aliceblue;
+    border-bottom: #000000 1px solid;
 }
 
 .nav-toggle {
@@ -177,6 +178,7 @@ nav a:hover {
     display: block;
     align-items: center;
     padding: 2% 10%;
+    overflow: hidden;
 }
 
 .imageleft {
@@ -188,7 +190,10 @@ nav a:hover {
 .loungeimg img {
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0 rgba(96, 99, 98, 0.8);
+    box-shadow: 0 0 10px 0 rgba(96, 99, 98, 0.8);
+    object-fit: cover;
+    width: 100%;
+    min-height: 344px;
 }
 
 .blocktxtright {
@@ -202,26 +207,113 @@ nav a:hover {
 .headingright {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0;
     padding: 10px 0;
 }
 
 .descright {
     font-family: 'Tahoma', sans-serif;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 1.225;
 }
 
+.secondblock {
+    display: block;
+    align-items: center;
+    padding: 2% 10%;
+    overflow: hidden;
+    box-shadow: 0 0 2px 0 rgba(96, 99, 98, 0.171);
+}
+
+.imageright {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.blocktxtleft {
+    margin: 10px 0;
+    padding: 0 10%;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.headingleft {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.descleft {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.225;
+}
+
+.thirdblock {
+    display: block;
+    align-items: center;
+    padding: 2% 10%;
+    overflow: hidden;
+}
+
+.fourthblock {
+    display: block;
+    align-items: center;
+    padding: 2% 10%;
+    overflow: hidden;
+    box-shadow: 0 0 2px 0 rgba(96, 99, 98, 0.171);
+}
+
+
+
 @media screen and (min-width: 1040px) {
     .firstblock {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .imageleft {
-        flex: 1;
+        grid-column: 1 / 2;
+    }
+    .loungeimg img {
+        width: 100%;
+        min-height: auto;
     }
     .blocktxtright {
-        flex: 2;
-        padding: 0 15%;
+        grid-column: 2 / 3;
+    }
+    .headingright {
+        font-size: 3rem;
+    }
+    .descright {
+        font-size: 1.5rem;
+    }
+    .secondblock {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imageright {
+        grid-column: 1 / 2;
+    }
+    .blocktxtleft {
+        grid-column: 2 / 3;
+    }
+    .headingleft {
+        font-size: 3rem;
+    }
+    .descleft {
+        font-size: 1.5rem;
+    }
+    .thirdblock {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .fourthblock {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
